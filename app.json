@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "MenuColombiano",
-    "slug": "MenuColombiano",
+    "slug": "menucolombiano",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,16 +15,30 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.jhonfdev.menucolombiano"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.jhonfdev.menucolombiano"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "e98f8570-0804-4dc2-aa0a-56cb3d1b2bd7"
+      }
+    },
+    "owner": "jhonfdev",
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/e98f8570-0804-4dc2-aa0a-56cb3d1b2bd7"
     }
   }
 }

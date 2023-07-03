@@ -43,7 +43,7 @@ export default function Home() {
       <ScrollView>
 
       {/* categorias */}
-            <Categories/>
+            {/* <Categories/> */}
 
       {/* features */}
       <View style={styles.viewfeatures}>

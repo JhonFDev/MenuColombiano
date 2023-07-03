@@ -11,20 +11,55 @@ import Home from "../screeens/Home";
 import Register from "../screeens/Register";
 import Profile from "../screeens/account/Profile";
 import Dishes from "../screeens/Dishes";
+import { Icon } from "@rneui/themed";
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
 
 export default function Navigation() {
+  //agregar iconos a la tab
+  const screenOptions = (route, color) => {
+    let iconName;
+    switch (route.name) {
+      case "homep":
+        iconName = "book-open-outline";
+        break;
+        case "profile":
+          iconName = "home-circle-outline";
+          break;
+          
+          default:
+            break;
+          }
+          return <Icon type="material-community" name={iconName} size={28} color={color}/>;
+        };
+        // fin agregar iconos a la tab
+        
+        
+
   const { user } = isUserLoggedAuthChaged();
-  if (user) {
+  if (!user) {
     return (
       <NavigationContainer>
         <Tab.Navigator
           initialRouteName="homep"
-          screenOptions={{ headerShown: false }}
+          screenOptions={({ route }) => ({
+            headerShown: false,
+            tabBarIcon: ({color}) => screenOptions(route, color),
+            tabBarActiveTintColor:"black",
+            tabBarInactiveTintColor:"gray",
+            tabBarAllowFontScaling:true,
+            tabBarLabelStyle:({fontSize:14, fontWeight:"bold"})
+            
+          })}
         >
-          <Tab.Screen name="homep" component={Homep} />
+          <Tab.Screen
+            name="homep"
+            component={Homep}
+            options={{ title: "Recetas" }}
+            
+            
+          />
           <Tab.Screen name="profile" component={Profile} />
         </Tab.Navigator>
       </NavigationContainer>
@@ -48,7 +83,10 @@ export default function Navigation() {
 
 function Homep() {
   return (
-    <Stack.Navigator initialRouteName="home" screenOptions={{ headerShown: false }}>
+    <Stack.Navigator
+      initialRouteName="home"
+      screenOptions={{ headerShown: false }}
+    >
       <Stack.Screen name="home" component={Home} />
       <Stack.Screen name="dishes" component={Dishes} />
     </Stack.Navigator>

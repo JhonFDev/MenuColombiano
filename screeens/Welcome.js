@@ -14,7 +14,7 @@ export default function Welcome() {
   const navigation = useNavigation();
 
   return (
-    <LinearGradient colors={["green", "orange","red","yellow"]} style={styles.linearGradient} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }}>
+    <LinearGradient colors={["yellow", "#0000ff70","red"]} style={styles.linearGradient} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }}>
       <SafeAreaView style={styles.safeareaview}>
         <View style={styles.viewelcome}>
           <Text style={styles.textelcome}>Menu Colombiano</Text>

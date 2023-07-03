@@ -8,7 +8,7 @@ import { isUserLoggedAuthChaged } from "../../utils/actions";
 export default function DishesCard({ item }) {
   const navigation = useNavigation();
   const { user } = isUserLoggedAuthChaged();
-  if (user) {
+  if (!user) {
     return (
       <TouchableWithoutFeedback
         onPress={() => navigation.navigate("dishes", { ...item })}
@@ -25,15 +25,30 @@ export default function DishesCard({ item }) {
                 <Text style={styles.textcategory}>{item.category}</Text>
               </Text>
             </View>
+            <View style={styles.viewtime}>
+              <Icon
+                name="clock-time-seven"
+                type="material-community"
+                color={"#808080"}
+              />
+              <View>
+                <Text>
+                  Preparación:{" "}
+                  <Text style={styles.textpc}> {item.preparationtime}</Text>{" "}
+                </Text>
+                <Text>
+                  Cocción:{" "}
+                  <Text style={styles.textpc}> {item.cocciontime}</Text>
+                </Text>
+              </View>
+            </View>
           </View>
         </View>
       </TouchableWithoutFeedback>
     );
   } else {
     return (
-      <TouchableWithoutFeedback
-        onPress={() => navigation.navigate("login")}
-      >
+      <TouchableWithoutFeedback onPress={() => navigation.navigate("login")}>
         <View style={styles.viewcontiner}>
           <Image source={item.image} style={styles.img} />
           <View style={styles.viewname}>
@@ -93,5 +108,14 @@ const styles = StyleSheet.create({
   },
   textcategory: {
     fontWeight: "600",
+  },
+  viewtime: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 10,
+    marginTop: 5,
+  },
+  textpc: {
+    fontWeight: "700",
   },
 });
