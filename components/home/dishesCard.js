@@ -8,7 +8,7 @@ import { isUserLoggedAuthChaged } from "../../utils/actions";
 export default function DishesCard({ item }) {
   const navigation = useNavigation();
   const { user } = isUserLoggedAuthChaged();
-  if (!user) {
+  if (user) {
     return (
       <TouchableWithoutFeedback
         onPress={() => navigation.navigate("dishes", { ...item })}

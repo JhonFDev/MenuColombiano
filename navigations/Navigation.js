@@ -38,7 +38,7 @@ export default function Navigation() {
         
 
   const { user } = isUserLoggedAuthChaged();
-  if (!user) {
+  if (user) {
     return (
       <NavigationContainer>
         <Tab.Navigator
