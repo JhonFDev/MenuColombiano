@@ -39,8 +39,12 @@ export const featured = {
       stars: 4,
       reviews: "4.4k",
       category: "platos fuertes",
-      preparationtime: "20 min",
-      cocciontime: "1 h 30 min",
+      time: [
+        {
+          foodtime: "Preparación: 20 min. Cocción: 1 h 30 min",
+        },
+      ],
+
       dishes: [
         {
           id: 1,
@@ -67,8 +71,11 @@ export const featured = {
       stars: 4,
       reviews: "4.4k",
       category: "platos fuertes",
-      preparationtime: "30 min",
-      cocciontime: "1 h 15 min",
+      time: [
+        {
+          foodtime: "Preparación: 30 min. Cocción: 1 h 15 min",
+        },
+      ],
       dishes: [
         {
           id: 1,
@@ -95,8 +102,12 @@ export const featured = {
       stars: 4,
       reviews: "4.4k",
       category: "platos fuertes",
-      preparationtime: "15 min",
-      cocciontime: "1 h 10 min",
+      time: [
+        {
+          foodtime: "Preparación: 15 min. Cocción: 1 h 10 min",
+        },
+      ],
+
       dishes: [
         {
           id: 1,
@@ -126,13 +137,17 @@ export const featuredAcompañamientos = {
   restaurants: [
     {
       id: 1,
-      name: "Coquitas de aguacate y maiz",
+      name: "Coquitas de aguacate",
       image: require("../../../assets/coquitas-aguacate.jpg"),
       stars: 4,
       reviews: "4.4k",
       category: "Guarnicion",
-      preparationtime: "20 min",
-      cocciontime: "50 min",
+      time: [
+        {
+          foodtime: "Preparación: 20 min. Cocción: 50 min",
+        },
+      ],
+
       dishes: [
         {
           id: 1,
@@ -145,7 +160,8 @@ export const featuredAcompañamientos = {
 
           preparations: [
             {
-              preparation01: "1) lleve a la estufa una olla con agua y sal, cuaundo hierva, sumerja las mazorcas y tape la olla, cocine durante 15 mnutos, despues de que vuelva a hervir, escurra el agua y guardela para hacer sopa, desgrane las mazorcas. 2) En una sarten a fuego medio coloque la tocineta y la mantequilla, deje dorar la tocineta, retirela y escurra sobre papel absorbente, recuerde que si la tocineta dora mucho esta se amarga, desmenuzela y guarde. 3) Retire la grasa del sarten, deje solamente 3 cuchardaas, caliente a fuego medio y sofria el pimenton durante 3 minutos, agregue los granos de maiz y cocine durante 5 minutos, revolviendo constantemente, mezcle la tocineta. 4) Rocie el jugo de limon sobre los aguacates, especialmente sobre sus bordes para que no se oscurezcan, rellene las cavidades con el maiz, sirva y si gusta puede presentar como aderezo un guiso",
+              preparation01:
+                "1) lleve a la estufa una olla con agua y sal, cuaundo hierva, sumerja las mazorcas y tape la olla, cocine durante 15 mnutos, despues de que vuelva a hervir, escurra el agua y guardela para hacer sopa, desgrane las mazorcas. 2) En una sarten a fuego medio coloque la tocineta y la mantequilla, deje dorar la tocineta, retirela y escurra sobre papel absorbente, recuerde que si la tocineta dora mucho esta se amarga, desmenuzela y guarde. 3) Retire la grasa del sarten, deje solamente 3 cuchardaas, caliente a fuego medio y sofria el pimenton durante 3 minutos, agregue los granos de maiz y cocine durante 5 minutos, revolviendo constantemente, mezcle la tocineta. 4) Rocie el jugo de limon sobre los aguacates, especialmente sobre sus bordes para que no se oscurezcan, rellene las cavidades con el maiz, sirva y si gusta puede presentar como aderezo un guiso",
             },
           ],
         },
@@ -158,20 +174,25 @@ export const featuredAcompañamientos = {
       stars: 4,
       reviews: "4.4k",
       category: "Guarnicion",
-      preparationtime: "20 min",
-      cocciontime: " 35 min",
+      time: [
+        {
+          foodtime: "Preparación: 20 min. Cocción: 35 min",
+        },
+      ],
       dishes: [
         {
           id: 1,
           ingredients: [
             {
-              ingredient01: "1 coco. 2 cucharadas de azucar . 1 libra de arroz. 1 cajita de uvas pasas. sal al gusto",
+              ingredient01:
+                "1 coco. 2 cucharadas de azucar . 1 libra de arroz. 1 cajita de uvas pasas. sal al gusto",
             },
           ],
 
           preparations: [
             {
-              preparation01: "1) vacie el agua de coco, recogela y adicione agua tibia suficiente para completar 1 taza, ralle el coco, agregue el agua, estruje con la mano y exprima sobre un colador para extraer la primera leche del coco, guarde. 2) continue agregando mas agua tibia al coco rallafo, repita la operacion hasta obtener 3 tazas de leche que debe mantener aparte de la anterior. 3) En una olla mediana, mezcle la primera leche con el azucar y cocine a fuego medio hasta que tome color de caramelo quemado, añada la leche restante y resuelva constantemente hasta que desaparezcan los granos oscuros. 4) Agregue la sal y el arroz, mezcle, cocine a fuego alto hasta que comienze a hervir, reduzca el fuego y continue cocinando hasta que se observen agujeros pequeños en la superficie, si va a utilizar las uvas pasas, añadalas en este momento de la preparacion, tape la olla y cocine a fuego lento hasta que seque y el arroz este cocido y suelto",
+              preparation01:
+                "1) vacie el agua de coco, recogela y adicione agua tibia suficiente para completar 1 taza, ralle el coco, agregue el agua, estruje con la mano y exprima sobre un colador para extraer la primera leche del coco, guarde. 2) continue agregando mas agua tibia al coco rallafo, repita la operacion hasta obtener 3 tazas de leche que debe mantener aparte de la anterior. 3) En una olla mediana, mezcle la primera leche con el azucar y cocine a fuego medio hasta que tome color de caramelo quemado, añada la leche restante y resuelva constantemente hasta que desaparezcan los granos oscuros. 4) Agregue la sal y el arroz, mezcle, cocine a fuego alto hasta que comienze a hervir, reduzca el fuego y continue cocinando hasta que se observen agujeros pequeños en la superficie, si va a utilizar las uvas pasas, añadalas en este momento de la preparacion, tape la olla y cocine a fuego lento hasta que seque y el arroz este cocido y suelto",
             },
           ],
         },
@@ -184,20 +205,23 @@ export const featuredAcompañamientos = {
       stars: 4,
       reviews: "4.4k",
       category: "Guarnicion",
-      preparationtime: "",
-      cocciontime: "",
+      time:[{
+        foodtime: "Preparación: 20 min. Cocción: 10 min",
+      }],      
       dishes: [
         {
           id: 1,
           ingredients: [
             {
-              ingredient01: "",
+              ingredient01:
+                "2 platanos hartones maduros. 2 huevos. 2 cucharadas de leche. 4 cucharadas de harina de trigo. 1 cucharadita de azucar. queso campesino prtido en cubos. aceite para freir",
             },
           ],
 
           preparations: [
             {
-              preparation01: "",
+              preparation01:
+                "1) Pele y parta los platanos en trozos que no sean muy grandes, frialos en el aceite caliente hasta que esten ligeramente dorados, Retire, escurra en papel toalla y aplanelos con la piedra hasta que queden delgados pero no demasiado. 2) Forme una especia de sandwich con 2 patacones y el queso en el centro, presione los bordes. 3) Aparte, bata los huevos como para tortilla, adicione la leche y mezcle, gradualmente añada la harina y el azucar, mezcle hasta que la preparacion tenga una consistencia cremosa. 4) Pase los sandwiches de platano por la preparacion anterior cubriendo todos los lados y frialos en aceite caliente hasta que esten dorados, escurralos en papel toalla, sirvalos bien caliente",
             },
           ],
         },
@@ -209,7 +233,7 @@ export const featuredAcompañamientos = {
 export const featurepostresyamasijos = {
   id: 3,
   title: "Postres y Amasijos",
-  description: "soft and tender fried chicken",
+  description: "Una delicia despues de cada comida",
   restaurants: [
     {
       id: 1,
@@ -217,21 +241,25 @@ export const featurepostresyamasijos = {
       image: require("../../../assets/pizzaDish.png"),
       stars: 4,
       reviews: "4.4k",
-      category: "Fast Food",
-      preparationtime: "",
-      cocciontime: "",
+      category: "Postres",
+      time: [
+        {
+          foodtime:
+            "Preparación: 40 min. Cocción: 1 h 30 min. Refrigeración: 2 h",
+        },
+      ],
       dishes: [
         {
           id: 1,
           ingredients: [
             {
-              ingredient01: "",
+              ingredient01: "4 tazas de nata, que se obtienen de 3 cartones de leche de 1.500 cm cada uno. 1 1/2 libras de azucar. 3 tazas de agua. 8 yemas de huevo, batido hasta que esten bien esponjadas. 1 trago de ron. ciruelas pasas o uvas pasas",
             },
           ],
 
           preparations: [
             {
-              preparation01: "",
+              preparation01: "1) las natas obtengalas a partir de 3 cartones de leche, ponga la leche al fuego en una vasija amplia y no muy profunda, deje soltar el hervor, retire y deje reposar, saque la nata con un tenedor enrollando para que salga entera. 2) Nuevamente lleve la vasija con la leche a fuego lento y deje cocinar de manera que vaya criando nata, retire la nata y repita la operacion hasta que la leche este de color amarillo cremoso y sabor salado. 3) Aparte, haga el almibar con 1 1/2 libras de azucar y tres tazas de agua, hasta que de punto de hilo flojo, cuidadosamante se le agregan las natas, una a una y dentro el almibar se van separando con un tenedor. 4) En la licuadora bata las yemas hasta que esten bien esponjosas, y de color limon claro, y poco a poco agreguelas a la preparacion anterior, cocine a fuego medio lento hasta el momento antes de hervir, retire del fuego, deje reposar. 5) Agregue el tarro de ron, y opcionalmente si desea ciruelas pasas partidas o uvas pasas, refrigere. NOTA. El secreto de este postre consiste en sacar todas las natas el mismo dia",
             },
           ],
         },
@@ -243,9 +271,13 @@ export const featurepostresyamasijos = {
       image: require("../../../assets/pizzaDish.png"),
       stars: 4,
       reviews: "4.4k",
-      category: "Fast Food",
-      preparationtime: "",
-      cocciontime: "",
+      category: "Postres",
+      time: [
+        {
+          foodtime:
+            "Preparación: 20 min. Cocción: 40 min",
+        },
+      ],
       dishes: [
         {
           id: 1,
@@ -254,13 +286,13 @@ export const featurepostresyamasijos = {
           image: require("../../../assets/pizzaDish.png"),
           ingredients: [
             {
-              ingredient01: "",
+              ingredient01: "15 guayabas comunes, maduras y sanas, medianas. 2 limones grandes. 2 1/2 tazas de azucar. 3 tazas de agua",
             },
           ],
 
           preparations: [
             {
-              preparation01: "",
+              preparation01: "1) con un cuchillo pequeño bien afilado pele las guayabas, partalas en mitades y con una cucharita pequeña, teniendo cuidado de no perforarlas, retire las semillas. 2) Deposite las guayabas en un recipiente que no sea de aluminio, cubralas con agua y agregue el jugo de limon, deje reposar durante 2 horas, entretanto licue las semillas con muy poca agua y pase el producido por un cedazo. 3) combine el cernido con el agua que va a emplear en la preparacion y junto con el azucar lleve al fuego, a temperatura media cocine revolviendo ocasionalmente, hasta tener un almibar liviano, añada los cascos de guayabas y cocine hasta que esten blando y el almibar denso",
             },
           ],
         },
@@ -272,21 +304,25 @@ export const featurepostresyamasijos = {
       image: require("../../../assets/pizzaDish.png"),
       stars: 4,
       reviews: "4.4k",
-      category: "Fast Food",
-      preparationtime: "",
-      cocciontime: "",
+      category: "Postres",
+      time: [
+        {
+          foodtime:
+            "Preparación: 10 min. Cocción: 25 min. Refrigeración: 2 h",
+        },
+      ],
       dishes: [
         {
           id: 1,
           ingredients: [
             {
-              ingredient01: "",
+              ingredient01: "1 libra de uchuvas. pesadas sin capacho. 1/2 taza de azucar. 1 taza de agua",
             },
           ],
 
           preparations: [
             {
-              preparation01: "",
+              preparation01: "1) lave y seque las uchuvas, en una olla haga hervir a fuego medio el azucar combinada con el agua. 2) Apenas hierva el liquido y el azucar este bien disuelta, coloque en la olla las uchuvas; reduzca el fuego y lentamente cocine durante 15 minutos, retire del fuego, vierta en un recipiente de vidrio, deje enfriar y refrigere",
             },
           ],
         },
@@ -307,8 +343,12 @@ export const featureBebidas = {
       stars: 4,
       reviews: "4.4k",
       category: "Fast Food",
-      preparationtime: "",
-      cocciontime: "",
+      time: [
+        {
+          foodtime:
+            "Preparación: 10 min",
+        },
+      ],
       dishes: [
         {
           id: 1,
@@ -333,8 +373,12 @@ export const featureBebidas = {
       stars: 4,
       reviews: "4.4k",
       category: "Fast Food",
-      preparationtime: "",
-      cocciontime: "",
+      time: [
+        {
+          foodtime:
+            "Preparación: 10 min",
+        },
+      ],
       dishes: [
         {
           id: 1,
@@ -359,8 +403,12 @@ export const featureBebidas = {
       stars: 4,
       reviews: "4.4k",
       category: "Fast Food",
-      preparationtime: "",
-      cocciontime: "",
+      time: [
+        {
+          foodtime:
+            "Preparación: 10 min",
+        },
+      ],
       dishes: [
         {
           id: 1,
@@ -392,8 +440,12 @@ export const featureSalsas = {
       stars: 4,
       reviews: "4.4k",
       category: "Fast Food",
-      preparationtime: "",
-      cocciontime: "",
+      time: [
+        {
+          foodtime:
+            "Preparación: 10 min",
+        },
+      ],
       dishes: [
         {
           id: 1,
@@ -419,8 +471,12 @@ export const featureSalsas = {
       stars: 4,
       reviews: "4.4k",
       category: "Fast Food",
-      preparationtime: "",
-      cocciontime: "",
+      time: [
+        {
+          foodtime:
+            "Preparación: 10 min",
+        },
+      ],
       dishes: [
         {
           id: 1,
@@ -439,15 +495,21 @@ export const featureSalsas = {
       ],
     },
     {
-      id: 1,
+      id: 3,
       name: "Salsa Tartara",
       image: require("../../../assets/pizzaDish.png"),
       description: "Hot and spicy pizzas",
       stars: 4,
       reviews: "4.4k",
       category: "Fast Food",
-      preparationtime: "",
-      cocciontime: "",
+      
+      time: [
+        {
+          foodtime:
+          
+"Preparación: 15 min"
+        },
+      ],
       dishes: [
         {
           id: 1,

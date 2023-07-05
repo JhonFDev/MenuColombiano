@@ -4,6 +4,7 @@ import { useNavigation, useRoute } from "@react-navigation/native";
 import { Icon, Image } from "@rneui/themed";
 import { TouchableOpacity } from "react-native";
 import DishRow from "../components/home/dishRow";
+import FoodTime from "../components/home/foodTime";
 
 export default function Dishes() {
   const { params } = useRoute();
@@ -46,15 +47,9 @@ export default function Dishes() {
                     size={15}
                   />
                   <View>
-                    <Text style={styles.textpct}>
-                      Preparación:{""}
-                      <Text style={styles.textpc}> {item.preparationtime}</Text>
-                      {""}
-                    </Text>
-                    <Text style={styles.textpct}>
-                      Cocción:{""}
-                      <Text style={styles.textpc}> {item.cocciontime}</Text>
-                    </Text>
+                    {
+                      item.time.map((timeprepa, listcategories) => <FoodTime item={{...timeprepa}} key={listcategories}/>)
+                    }
                   </View>
                 </View>
               </View>
@@ -142,6 +137,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     gap: 6,
     justifyContent: "center",
+    
   },
   textstars: {
     color: "#228b22",
@@ -170,8 +166,8 @@ const styles = StyleSheet.create({
     alignContent: "center",
   },
   viewname: {
-    marginTop: 5,
-    bottom: 20,
+    marginTop: 6,
+    bottom: 29,
   },
   textpct: {
     fontSize: 13,
@@ -179,6 +175,8 @@ const styles = StyleSheet.create({
 // menu
   viewcontainerMenu:{
     backgroundColor:"white",
+    top:10
+
   },
   textmenu:{
     fontWeight:"bold",

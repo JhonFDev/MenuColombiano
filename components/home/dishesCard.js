@@ -4,6 +4,7 @@ import { TouchableWithoutFeedback } from "react-native";
 import { Icon } from "@rneui/themed";
 import { useNavigation } from "@react-navigation/native";
 import { isUserLoggedAuthChaged } from "../../utils/actions";
+import FoodTime from "./foodTime";
 
 export default function DishesCard({ item }) {
   const navigation = useNavigation();
@@ -32,14 +33,9 @@ export default function DishesCard({ item }) {
                 color={"#808080"}
               />
               <View>
-                <Text>
-                  Preparación:{" "}
-                  <Text style={styles.textpc}> {item.preparationtime}</Text>{" "}
-                </Text>
-                <Text>
-                  Cocción:{" "}
-                  <Text style={styles.textpc}> {item.cocciontime}</Text>
-                </Text>
+                {item.time.map((timeprepa1, listcategories) => (
+                  <FoodTime item={{ ...timeprepa1 }} key={listcategories} />
+                ))}
               </View>
             </View>
           </View>
