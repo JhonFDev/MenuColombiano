@@ -205,9 +205,11 @@ export const featuredAcompañamientos = {
       stars: 4,
       reviews: "4.4k",
       category: "Guarnicion",
-      time:[{
-        foodtime: "Preparación: 20 min. Cocción: 10 min",
-      }],      
+      time: [
+        {
+          foodtime: "Preparación: 20 min. Cocción: 10 min",
+        },
+      ],
       dishes: [
         {
           id: 1,
@@ -253,13 +255,15 @@ export const featurepostresyamasijos = {
           id: 1,
           ingredients: [
             {
-              ingredient01: "4 tazas de nata, que se obtienen de 3 cartones de leche de 1.500 cm cada uno. 1 1/2 libras de azucar. 3 tazas de agua. 8 yemas de huevo, batido hasta que esten bien esponjadas. 1 trago de ron. ciruelas pasas o uvas pasas",
+              ingredient01:
+                "4 tazas de nata, que se obtienen de 3 cartones de leche de 1.500 cm cada uno. 1 1/2 libras de azucar. 3 tazas de agua. 8 yemas de huevo, batido hasta que esten bien esponjadas. 1 trago de ron. ciruelas pasas o uvas pasas",
             },
           ],
 
           preparations: [
             {
-              preparation01: "1) las natas obtengalas a partir de 3 cartones de leche, ponga la leche al fuego en una vasija amplia y no muy profunda, deje soltar el hervor, retire y deje reposar, saque la nata con un tenedor enrollando para que salga entera. 2) Nuevamente lleve la vasija con la leche a fuego lento y deje cocinar de manera que vaya criando nata, retire la nata y repita la operacion hasta que la leche este de color amarillo cremoso y sabor salado. 3) Aparte, haga el almibar con 1 1/2 libras de azucar y tres tazas de agua, hasta que de punto de hilo flojo, cuidadosamante se le agregan las natas, una a una y dentro el almibar se van separando con un tenedor. 4) En la licuadora bata las yemas hasta que esten bien esponjosas, y de color limon claro, y poco a poco agreguelas a la preparacion anterior, cocine a fuego medio lento hasta el momento antes de hervir, retire del fuego, deje reposar. 5) Agregue el tarro de ron, y opcionalmente si desea ciruelas pasas partidas o uvas pasas, refrigere. NOTA. El secreto de este postre consiste en sacar todas las natas el mismo dia",
+              preparation01:
+                "1) las natas obtengalas a partir de 3 cartones de leche, ponga la leche al fuego en una vasija amplia y no muy profunda, deje soltar el hervor, retire y deje reposar, saque la nata con un tenedor enrollando para que salga entera. 2) Nuevamente lleve la vasija con la leche a fuego lento y deje cocinar de manera que vaya criando nata, retire la nata y repita la operacion hasta que la leche este de color amarillo cremoso y sabor salado. 3) Aparte, haga el almibar con 1 1/2 libras de azucar y tres tazas de agua, hasta que de punto de hilo flojo, cuidadosamante se le agregan las natas, una a una y dentro el almibar se van separando con un tenedor. 4) En la licuadora bata las yemas hasta que esten bien esponjosas, y de color limon claro, y poco a poco agreguelas a la preparacion anterior, cocine a fuego medio lento hasta el momento antes de hervir, retire del fuego, deje reposar. 5) Agregue el tarro de ron, y opcionalmente si desea ciruelas pasas partidas o uvas pasas, refrigere. NOTA. El secreto de este postre consiste en sacar todas las natas el mismo dia",
             },
           ],
         },
@@ -274,8 +278,7 @@ export const featurepostresyamasijos = {
       category: "Postres",
       time: [
         {
-          foodtime:
-            "Preparación: 20 min. Cocción: 40 min",
+          foodtime: "Preparación: 20 min. Cocción: 40 min",
         },
       ],
       dishes: [
@@ -286,13 +289,15 @@ export const featurepostresyamasijos = {
           image: require("../../../assets/pizzaDish.png"),
           ingredients: [
             {
-              ingredient01: "15 guayabas comunes, maduras y sanas, medianas. 2 limones grandes. 2 1/2 tazas de azucar. 3 tazas de agua",
+              ingredient01:
+                "15 guayabas comunes, maduras y sanas, medianas. 2 limones grandes. 2 1/2 tazas de azucar. 3 tazas de agua",
             },
           ],
 
           preparations: [
             {
-              preparation01: "1) con un cuchillo pequeño bien afilado pele las guayabas, partalas en mitades y con una cucharita pequeña, teniendo cuidado de no perforarlas, retire las semillas. 2) Deposite las guayabas en un recipiente que no sea de aluminio, cubralas con agua y agregue el jugo de limon, deje reposar durante 2 horas, entretanto licue las semillas con muy poca agua y pase el producido por un cedazo. 3) combine el cernido con el agua que va a emplear en la preparacion y junto con el azucar lleve al fuego, a temperatura media cocine revolviendo ocasionalmente, hasta tener un almibar liviano, añada los cascos de guayabas y cocine hasta que esten blando y el almibar denso",
+              preparation01:
+                "1) con un cuchillo pequeño bien afilado pele las guayabas, partalas en mitades y con una cucharita pequeña, teniendo cuidado de no perforarlas, retire las semillas. 2) Deposite las guayabas en un recipiente que no sea de aluminio, cubralas con agua y agregue el jugo de limon, deje reposar durante 2 horas, entretanto licue las semillas con muy poca agua y pase el producido por un cedazo. 3) combine el cernido con el agua que va a emplear en la preparacion y junto con el azucar lleve al fuego, a temperatura media cocine revolviendo ocasionalmente, hasta tener un almibar liviano, añada los cascos de guayabas y cocine hasta que esten blando y el almibar denso",
             },
           ],
         },
@@ -307,8 +312,7 @@ export const featurepostresyamasijos = {
       category: "Postres",
       time: [
         {
-          foodtime:
-            "Preparación: 10 min. Cocción: 25 min. Refrigeración: 2 h",
+          foodtime: "Preparación: 10 min. Cocción: 25 min. Refrigeración: 2 h",
         },
       ],
       dishes: [
@@ -316,13 +320,15 @@ export const featurepostresyamasijos = {
           id: 1,
           ingredients: [
             {
-              ingredient01: "1 libra de uchuvas. pesadas sin capacho. 1/2 taza de azucar. 1 taza de agua",
+              ingredient01:
+                "1 libra de uchuvas. pesadas sin capacho. 1/2 taza de azucar. 1 taza de agua",
             },
           ],
 
           preparations: [
             {
-              preparation01: "1) lave y seque las uchuvas, en una olla haga hervir a fuego medio el azucar combinada con el agua. 2) Apenas hierva el liquido y el azucar este bien disuelta, coloque en la olla las uchuvas; reduzca el fuego y lentamente cocine durante 15 minutos, retire del fuego, vierta en un recipiente de vidrio, deje enfriar y refrigere",
+              preparation01:
+                "1) lave y seque las uchuvas, en una olla haga hervir a fuego medio el azucar combinada con el agua. 2) Apenas hierva el liquido y el azucar este bien disuelta, coloque en la olla las uchuvas; reduzca el fuego y lentamente cocine durante 15 minutos, retire del fuego, vierta en un recipiente de vidrio, deje enfriar y refrigere",
             },
           ],
         },
@@ -342,11 +348,10 @@ export const featureBebidas = {
       image: require("../../../assets/pizzaDish.png"),
       stars: 4,
       reviews: "4.4k",
-      category: "Fast Food",
+      category: "bebidas",
       time: [
         {
-          foodtime:
-            "Preparación: 10 min",
+          foodtime: "Preparación: 10 min",
         },
       ],
       dishes: [
@@ -354,13 +359,15 @@ export const featureBebidas = {
           id: 1,
           ingredients: [
             {
-              ingredient01: "",
+              ingredient01:
+                "1/2 taza de pulpa de tamarindo. 5 tazas de agua. azucar al gusto. hielo",
             },
           ],
 
           preparations: [
             {
-              preparation01: "",
+              preparation01:
+                "En la licuadora coloque la pulpa de tamarindo y el agua, bata a velocidad media durante 5 minutos, adicione el azucar y a alta velocidad bata durante 5 minutos mas, sirva en vasos con hielo al gusto",
             },
           ],
         },
@@ -372,11 +379,10 @@ export const featureBebidas = {
       image: require("../../../assets/pizzaDish.png"),
       stars: 4,
       reviews: "4.4k",
-      category: "Fast Food",
+      category: "bebidas",
       time: [
         {
-          foodtime:
-            "Preparación: 10 min",
+          foodtime: "Preparación: 10 min",
         },
       ],
       dishes: [
@@ -384,13 +390,13 @@ export const featureBebidas = {
           id: 1,
           ingredients: [
             {
-              ingredient01: "",
+              ingredient01: "12 curubas maduras. 3/4 tazas de azucas. 1 1/2 tazas de agua. 4 tazas de leche. 2 cucharadas de crema de leche (bien fresca)",
             },
           ],
 
           preparations: [
             {
-              preparation01: "",
+              preparation01: "Coloque en la licuadora la pulpa de las curubas con el azúcar, a velocidad baja y de manera intermitente bata para que la pulpa se desprenda de las semillas, gradualmente añada el agua, bata suavemente, cuale el jugo y devuélvalo a la licuadora, poco a poco y batiendo todo el tiempo, adicione la leche y la crema de leche, licúe todo hasta que el sorbete tenga color uniforme, pruebe y agregue mas azúcar si es necesario, mantenga refrigerado hasta el momento de servir",
             },
           ],
         },
@@ -402,11 +408,10 @@ export const featureBebidas = {
       image: require("../../../assets/pizzaDish.png"),
       stars: 4,
       reviews: "4.4k",
-      category: "Fast Food",
+      category: "bebidas",
       time: [
         {
-          foodtime:
-            "Preparación: 10 min",
+          foodtime: "Preparación: 10 min",
         },
       ],
       dishes: [
@@ -414,13 +419,13 @@ export const featureBebidas = {
           id: 1,
           ingredients: [
             {
-              ingredient01: "",
+              ingredient01: "3 tazas de jugo de piña, fresco. 1 taza de zanahoria, rallada, por los huecos mas grandes del rallador. miel de abeja o azúcar al gusto. 12 cubos de hielo",
             },
           ],
 
           preparations: [
             {
-              preparation01: "",
+              preparation01: "Coloque el juego de piña y la zanahoria en la licuadora, bata  alta velocidad durante 5 minutos, verifique el sabor dulce y, si es necesario, agregue miel de abejao azucar y los cubos de hielo, bata durante 5 minutos mas, sirva inmediatamente",
             },
           ],
         },
@@ -442,8 +447,7 @@ export const featureSalsas = {
       category: "Fast Food",
       time: [
         {
-          foodtime:
-            "Preparación: 10 min",
+          foodtime: "Preparación: 10 min. Medida para: 3/4 taza",
         },
       ],
       dishes: [
@@ -451,13 +455,13 @@ export const featureSalsas = {
           id: 1,
           ingredients: [
             {
-              ingredient01: "",
+              ingredient01: "1/2 de vino blanco seco, 2 cucharadas de vinagre, 4 dientes de ajos picados. 2 cucharadas de cilantro picado, 2 cucharadas de perejil picado, 2 cucharadas de cebolla cabezona blanca, picada. 2 cucharadas de aceite. aji y sal al gusto",
             },
           ],
 
           preparations: [
             {
-              preparation01: "",
+              preparation01: "En un recipiente hondo combine el vino con el vinagre. Agregue todos los demas ingredientes, menos el aceite, con un batior de alambre revuelva bien, por ultimo adicione el aceite en un chorrito continuo y delgado, mientras bate todo el tiempo, verifique la zason y sirva fresco. NOTA. Ideal para acompañar carnes preparadas al carbon o a la plancha",
             },
           ],
         },
@@ -473,8 +477,7 @@ export const featureSalsas = {
       category: "Fast Food",
       time: [
         {
-          foodtime:
-            "Preparación: 10 min",
+          foodtime: "Preparación: 10 min. Medida para: 1 taza",
         },
       ],
       dishes: [
@@ -482,13 +485,13 @@ export const featureSalsas = {
           id: 1,
           ingredients: [
             {
-              ingredient01: "",
+              ingredient01: "1 cucharada de mantequilla, 1 cucharada de cebolla cabezona blanca, picada. 1 1/2 cucharadas de harina de trigo. 1/2 taza de caldo de gallina. 1/2 taza de vino blanco. 1 cucharada de perejil fresco y picado. sal al gusto",
             },
           ],
 
           preparations: [
             {
-              preparation01: "",
+              preparation01: "En una sarten pequeña derrita y caliente la mantequilla, agregue la cebolla, y sofria hasta que este transparente, rocie la cebolla con la harina y revolviendo cocine durante 3 minutos hasta que la mezcla se vea suave, gradualmente añada primero el caldo y luego el vino, mienras cocina revolviendo hata que la salsa este bien caliente yaterciopelada, finalmente, adicione el perejil y verifique la sazon. NOTA. Para carnes blancas o pescado",
             },
           ],
         },
@@ -502,12 +505,10 @@ export const featureSalsas = {
       stars: 4,
       reviews: "4.4k",
       category: "Fast Food",
-      
+
       time: [
         {
-          foodtime:
-          
-"Preparación: 15 min"
+          foodtime: "Preparación: 15 min. medida para : 1  1/4 tazas",
         },
       ],
       dishes: [
@@ -515,13 +516,13 @@ export const featureSalsas = {
           id: 1,
           ingredients: [
             {
-              ingredient01: "",
+              ingredient01: "1 cucharada de alcaparras escurridas. 1 cucharada de pepinillos encurtidos. 1 cucharada de perejil picado. 1 taza de mayonesa. 1 cucharadita de jugo de limon. Sal y pimienta al gusto",
             },
           ],
 
           preparations: [
             {
-              preparation01: "",
+              preparation01: "Parta finamente las alcaparras y los pepinillos encurtidos, en un recipiente hondo de vidrio o plastico, combine las alcaparras, el pepinillo, el perejil y la mayonesa, revuelva bien, adicione el jugo de limon y sazone con sal, pimiento o mas jugo de limon, si gustas puedes agregar en este momento un huevo duro picado. NOTA. Esta salsa dura muy bien en la nevera, hasta una semana, si se guarda en un recipiente que no sea metalico, hermeticamente cerrado, estupenda para acompañar papas fritas o asadas",
             },
           ],
         },

@@ -6,23 +6,57 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { useNavigation } from "@react-navigation/native";
 import { size } from "lodash";
 import { TouchableOpacity } from "react-native-gesture-handler";
-import { registerUser } from "../utils/actions";
 
 //mis imports
+import { registerUser, validateEmail } from "../utils/actions";
+
+//fin mis imports
 
 export default function RegisterForm() {
   const navigation = useNavigation();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [confirm, setConfirm] = useState("");
+  const [username, setUsername] = useState("");
+  const [errorEmail, setErrorEmail] = useState("");
+  const [errorPassword, setErrorPassword] = useState("");
+  const [errorConfirm, setErrorConfirm] = useState("");
 
   const doRegisterUser = async () => {
-    await registerUser(email, password);
+    if (validateData()) {
+      await registerUser(email, password);
+      navigation.navigate("login");
+    }
+    return;
+  };
+
+  const validateData = () => {
+    setErrorEmail("");
+    setErrorPassword("");
+    setErrorConfirm("");
+
+    let isValid = true;
+    if (!validateEmail(email)) {
+      setErrorEmail("debes ingresar un correo valido");
+      isValid = false;
+    }
+    if (size(password) < 8) {
+      setErrorPassword("debes ingresar una contraseña minimo de 8 caracteres");
+      isValid = false;
+    }
+    if (confirm !== password) {
+      setErrorConfirm("las contraseñas no coinciden");
+      isValid = false;
+    }
+    return isValid;
   };
 
   return (
     <View>
       <View style={styles.viewinputs}>
         <Input
+          value={username}
+          onChangeText={(value) => setUsername(value)}
           placeholder="Ingresar Usuario"
           inputContainerStyle={styles.inputCS}
         />
@@ -33,6 +67,8 @@ export default function RegisterForm() {
           inputContainerStyle={styles.inputCS}
           keyboardType={"email-address"}
           autoCapitalize={"none"}
+          errorMessage={errorEmail}
+          errorStyle={styles.msgerror}
         />
         <Input
           value={password}
@@ -41,12 +77,18 @@ export default function RegisterForm() {
           inputContainerStyle={styles.inputCS}
           password={true}
           secureTextEntry={true}
+          errorMessage={errorPassword}
+          errorStyle={styles.msgerror}
         />
         <Input
+          value={confirm}
+          onChangeText={(value) => setConfirm(value)}
           placeholder="Confirma la contraseña"
           inputContainerStyle={styles.inputCS}
           password={true}
           secureTextEntry={true}
+          errorMessage={errorConfirm}
+          errorStyle={styles.msgerror}
         />
 
         <TouchableOpacity style={styles.toucha} onPress={doRegisterUser}>
@@ -123,4 +165,12 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontWeight: "bold",
   },
+  msgerror:{
+    color:"black",
+    fontSize:15,
+    textTransform:"capitalize",
+    letterSpacing:1,
+    fontWeight:"500",
+    textAlign:"center"
+  }
 });
