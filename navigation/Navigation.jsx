@@ -5,6 +5,8 @@ import { NavigationContainer } from '@react-navigation/native';
 //mis imports
 import Welcome from '../screens/Welcome';
 import Home from '../screens/Home';
+import Login from '../screens/Login';
+import Register from '../screens/Register';
 
 
 const Stack = createNativeStackNavigator();
@@ -17,6 +19,8 @@ const Navigation = () => {
     <Stack.Navigator initialRouteName='welcome'  screenOptions={{ headerShown: false }}>
        <Stack.Screen name="welcome" component={Welcome} />
        <Stack.Screen name="home" component={Home} />
+       <Stack.Screen name="login" component={Login} />
+       <Stack.Screen name="register" component={Register} />
     </Stack.Navigator>
     </NavigationContainer>
   );
