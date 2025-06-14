@@ -10,10 +10,7 @@ import {
 import { LinearGradient } from "expo-linear-gradient";
 import { useNavigation } from "@react-navigation/native";
 import { useEffect } from "react";
-import {
-  SafeAreaInsetsContext,
-  useSafeAreaInsets,
-} from "react-native-safe-area-context";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 // Importando los componentes necesarios de React Native y Expo
 
@@ -23,8 +20,7 @@ const Welcome = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       navigation.navigate("home");
-    }, 30000); // 3 segundos
-
+    }, 5000); // 3 segundos
     return () => clearTimeout(timer);
   }, []);
 
@@ -36,7 +32,7 @@ const Welcome = () => {
       start={{ x: 0, y: 0 }}
       end={{ x: 1, y: 1 }}
     >
-      <View style={{ paddingTop: insets.top, paddingBottom: insets.bottom }} className="border-4 border-white">
+      <View style={{ paddingTop: insets.top, paddingBottom: insets.bottom }}>
         <View className="flex-1 justify-center items-center w-max:[400]">
           <Text className="text-6xl font-bold text-center text-yellow-400 justify-center tracking-widest">
             Recetas Colombianas
