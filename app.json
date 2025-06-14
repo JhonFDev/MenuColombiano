@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "MenuColombiano",
-    "slug": "MenuColombiano",
+    "slug": "menucolombiano",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -25,8 +25,18 @@
     "web": {
       "favicon": "./assets/favicon.png",
       "bundler": "metro"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "e09306d3-9c51-4dd8-be15-4ff45457d580"
+      }
+    },
+    "owner": "jhonfdev",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/e09306d3-9c51-4dd8-be15-4ff45457d580"
     }
   }
 }
-
-
