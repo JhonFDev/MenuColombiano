@@ -60,15 +60,9 @@ const Home = () => {
         <Text className="text-2xl font-bold text-gray-900 mb-4 text-center tracking-widest pt-3">
           Home del menu colombiano
         </Text>
-        {/* <View  className="bg-gray-100 rounded-2xl p-4 shadow-md w-100">
-            <Image source={{ uri:'https://picsum.photos/300/200' }} className="h-52 w-full rounded-3xl mb-2 " />
-            <View className=" left-4">
-
-            <Text className="font-semibold text-lg">Recipe </Text>
-            <Text className="text-gray-500">30 min</Text>
-            </View>
-          </View> */}
-        <View>{<RecipesRow />}</View>
+          <View>
+            {<RecipesRow />}
+          </View>
       </ScrollView>
     </View>
   );

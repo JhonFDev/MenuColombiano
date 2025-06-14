@@ -1,5 +1,4 @@
 import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
-import React from "react";
 import DishesCard from "./DishesCard";
 
 export default function RecipesRow() {
@@ -7,6 +6,7 @@ export default function RecipesRow() {
     <>
       <View className="">
         <View>
+          <Text>yo soy RecipesRow</Text>
           <Text>titulo de la receta</Text>
           <Text>descripcion de la receta</Text>
         </View>
