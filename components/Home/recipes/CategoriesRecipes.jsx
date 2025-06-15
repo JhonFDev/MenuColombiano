@@ -49,7 +49,7 @@ export const categories = [
 
 export const featuredPlatosFuertes = {
   id: 1,
-  title: "Platos colombianos",
+  title: "Platos Fuertes",
   description: "Platos fuertes y tipicos de todas las regiones",
   recipes: [
     {
