@@ -47,11 +47,11 @@ export const categories = [
   },
 ];
 
-export const featured = {
+export const featuredPlatosFuertes = {
   id: 1,
   title: "Platos colombianos",
   description: "Platos fuertes y tipicos de todas las regiones",
-  restaurants: [
+  recipes: [
     {
       id: 1,
       name: "Ajiaco",
@@ -154,7 +154,7 @@ export const featuredAcompañamientos = {
   id: 2,
   title: "Acompañamientos",
   description: "La guarnicion de los platos fuertes",
-  restaurants: [
+  recipes: [
     {
       id: 1,
       name: "Coquitas de aguacate",
@@ -252,11 +252,15 @@ export const featuredAcompañamientos = {
   ],
 };
 
+export const featuredCaldosYSopas ={
+  
+}
+
 export const featurepostresyamasijos = {
   id: 3,
   title: "Postres y Amasijos",
   description: "Una delicia despues de cada comida",
-  restaurants: [
+  recipes: [
     {
       id: 1,
       name: "Postres de Nata",
@@ -361,7 +365,7 @@ export const featureBebidas = {
   id: 4,
   title: "Jugos y bebidas",
   description: "soft and tender fried chicken",
-  restaurants: [
+  recipes: [
     {
       id: 1,
       name: "Jugo de Tamarindo",
@@ -410,13 +414,15 @@ export const featureBebidas = {
           id: 1,
           ingredients: [
             {
-              ingredient01: "12 curubas maduras. 3/4 tazas de azucas. 1 1/2 tazas de agua. 4 tazas de leche. 2 cucharadas de crema de leche (bien fresca)",
+              ingredient01:
+                "12 curubas maduras. 3/4 tazas de azucas. 1 1/2 tazas de agua. 4 tazas de leche. 2 cucharadas de crema de leche (bien fresca)",
             },
           ],
 
           preparations: [
             {
-              preparation01: "Coloque en la licuadora la pulpa de las curubas con el azúcar, a velocidad baja y de manera intermitente bata para que la pulpa se desprenda de las semillas, gradualmente añada el agua, bata suavemente, cuale el jugo y devuélvalo a la licuadora, poco a poco y batiendo todo el tiempo, adicione la leche y la crema de leche, licúe todo hasta que el sorbete tenga color uniforme, pruebe y agregue mas azúcar si es necesario, mantenga refrigerado hasta el momento de servir",
+              preparation01:
+                "Coloque en la licuadora la pulpa de las curubas con el azúcar, a velocidad baja y de manera intermitente bata para que la pulpa se desprenda de las semillas, gradualmente añada el agua, bata suavemente, cuale el jugo y devuélvalo a la licuadora, poco a poco y batiendo todo el tiempo, adicione la leche y la crema de leche, licúe todo hasta que el sorbete tenga color uniforme, pruebe y agregue mas azúcar si es necesario, mantenga refrigerado hasta el momento de servir",
             },
           ],
         },
@@ -439,13 +445,15 @@ export const featureBebidas = {
           id: 1,
           ingredients: [
             {
-              ingredient01: "3 tazas de jugo de piña, fresco. 1 taza de zanahoria, rallada, por los huecos mas grandes del rallador. miel de abeja o azúcar al gusto. 12 cubos de hielo",
+              ingredient01:
+                "3 tazas de jugo de piña, fresco. 1 taza de zanahoria, rallada, por los huecos mas grandes del rallador. miel de abeja o azúcar al gusto. 12 cubos de hielo",
             },
           ],
 
           preparations: [
             {
-              preparation01: "Coloque el juego de piña y la zanahoria en la licuadora, bata  alta velocidad durante 5 minutos, verifique el sabor dulce y, si es necesario, agregue miel de abejao azucar y los cubos de hielo, bata durante 5 minutos mas, sirva inmediatamente",
+              preparation01:
+                "Coloque el juego de piña y la zanahoria en la licuadora, bata  alta velocidad durante 5 minutos, verifique el sabor dulce y, si es necesario, agregue miel de abejao azucar y los cubos de hielo, bata durante 5 minutos mas, sirva inmediatamente",
             },
           ],
         },
@@ -457,7 +465,7 @@ export const featureSalsas = {
   id: 5,
   title: "Salsas Calientes y Frias",
   description: "soft and tender fried chicken",
-  restaurants: [
+  recipes: [
     {
       id: 1,
       name: "Salsa Chimichurri",
@@ -475,13 +483,15 @@ export const featureSalsas = {
           id: 1,
           ingredients: [
             {
-              ingredient01: "1/2 de vino blanco seco, 2 cucharadas de vinagre, 4 dientes de ajos picados. 2 cucharadas de cilantro picado, 2 cucharadas de perejil picado, 2 cucharadas de cebolla cabezona blanca, picada. 2 cucharadas de aceite. aji y sal al gusto",
+              ingredient01:
+                "1/2 de vino blanco seco, 2 cucharadas de vinagre, 4 dientes de ajos picados. 2 cucharadas de cilantro picado, 2 cucharadas de perejil picado, 2 cucharadas de cebolla cabezona blanca, picada. 2 cucharadas de aceite. aji y sal al gusto",
             },
           ],
 
           preparations: [
             {
-              preparation01: "En un recipiente hondo combine el vino con el vinagre. Agregue todos los demas ingredientes, menos el aceite, con un batior de alambre revuelva bien, por ultimo adicione el aceite en un chorrito continuo y delgado, mientras bate todo el tiempo, verifique la zason y sirva fresco. NOTA. Ideal para acompañar carnes preparadas al carbon o a la plancha",
+              preparation01:
+                "En un recipiente hondo combine el vino con el vinagre. Agregue todos los demas ingredientes, menos el aceite, con un batior de alambre revuelva bien, por ultimo adicione el aceite en un chorrito continuo y delgado, mientras bate todo el tiempo, verifique la zason y sirva fresco. NOTA. Ideal para acompañar carnes preparadas al carbon o a la plancha",
             },
           ],
         },
@@ -505,13 +515,15 @@ export const featureSalsas = {
           id: 1,
           ingredients: [
             {
-              ingredient01: "1 cucharada de mantequilla, 1 cucharada de cebolla cabezona blanca, picada. 1 1/2 cucharadas de harina de trigo. 1/2 taza de caldo de gallina. 1/2 taza de vino blanco. 1 cucharada de perejil fresco y picado. sal al gusto",
+              ingredient01:
+                "1 cucharada de mantequilla, 1 cucharada de cebolla cabezona blanca, picada. 1 1/2 cucharadas de harina de trigo. 1/2 taza de caldo de gallina. 1/2 taza de vino blanco. 1 cucharada de perejil fresco y picado. sal al gusto",
             },
           ],
 
           preparations: [
             {
-              preparation01: "En una sarten pequeña derrita y caliente la mantequilla, agregue la cebolla, y sofria hasta que este transparente, rocie la cebolla con la harina y revolviendo cocine durante 3 minutos hasta que la mezcla se vea suave, gradualmente añada primero el caldo y luego el vino, mienras cocina revolviendo hata que la salsa este bien caliente yaterciopelada, finalmente, adicione el perejil y verifique la sazon. NOTA. Para carnes blancas o pescado",
+              preparation01:
+                "En una sarten pequeña derrita y caliente la mantequilla, agregue la cebolla, y sofria hasta que este transparente, rocie la cebolla con la harina y revolviendo cocine durante 3 minutos hasta que la mezcla se vea suave, gradualmente añada primero el caldo y luego el vino, mienras cocina revolviendo hata que la salsa este bien caliente yaterciopelada, finalmente, adicione el perejil y verifique la sazon. NOTA. Para carnes blancas o pescado",
             },
           ],
         },
@@ -536,13 +548,15 @@ export const featureSalsas = {
           id: 1,
           ingredients: [
             {
-              ingredient01: "1 cucharada de alcaparras escurridas. 1 cucharada de pepinillos encurtidos. 1 cucharada de perejil picado. 1 taza de mayonesa. 1 cucharadita de jugo de limon. Sal y pimienta al gusto",
+              ingredient01:
+                "1 cucharada de alcaparras escurridas. 1 cucharada de pepinillos encurtidos. 1 cucharada de perejil picado. 1 taza de mayonesa. 1 cucharadita de jugo de limon. Sal y pimienta al gusto",
             },
           ],
 
           preparations: [
             {
-              preparation01: "Parta finamente las alcaparras y los pepinillos encurtidos, en un recipiente hondo de vidrio o plastico, combine las alcaparras, el pepinillo, el perejil y la mayonesa, revuelva bien, adicione el jugo de limon y sazone con sal, pimiento o mas jugo de limon, si gustas puedes agregar en este momento un huevo duro picado. NOTA. Esta salsa dura muy bien en la nevera, hasta una semana, si se guarda en un recipiente que no sea metalico, hermeticamente cerrado, estupenda para acompañar papas fritas o asadas",
+              preparation01:
+                "Parta finamente las alcaparras y los pepinillos encurtidos, en un recipiente hondo de vidrio o plastico, combine las alcaparras, el pepinillo, el perejil y la mayonesa, revuelva bien, adicione el jugo de limon y sazone con sal, pimiento o mas jugo de limon, si gustas puedes agregar en este momento un huevo duro picado. NOTA. Esta salsa dura muy bien en la nevera, hasta una semana, si se guarda en un recipiente que no sea metalico, hermeticamente cerrado, estupenda para acompañar papas fritas o asadas",
             },
           ],
         },

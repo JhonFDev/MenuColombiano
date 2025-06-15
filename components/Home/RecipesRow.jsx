@@ -1,22 +1,19 @@
 import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
 import DishesCard from "./DishesCard";
-import Categories from "./Categories";
 
-export default function RecipesRow() {
+export default function RecipesRow({title, description, recipes}) {
   return (
     <>
-      <View className="border">
+      <View className="">
         {/* //vista categorias */}
-        <ScrollView >
-          {<Categories />}
-        </ScrollView>
+        
         {/* //fin vista categorias */}
 
         {/* //vista reciperow */}
         <View>
           <Text>yo soy RecipesRow</Text>
-          <Text>titulo de la receta</Text>
-          <Text>descripcion de la receta</Text>
+          <Text>titulo de la receta{title}</Text>
+          <Text>descripcion de la receta{description}</Text>
         </View>
         <Pressable onPress={() => alert("muy pronto...")}>
           <Text> Ver Todo...</Text>
@@ -25,7 +22,12 @@ export default function RecipesRow() {
 
         {/* // vista dishescard */}
         <ScrollView >
-          {<DishesCard />}
+          {recipes.map((recipe, CategoriesRecipes) => {
+            return(
+            <DishesCard />
+            )
+          })
+            }
         </ScrollView>
         {/* //fin vista dishescard */}
       </View>

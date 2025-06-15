@@ -13,7 +13,7 @@ import { categories } from "./recipes/CategoriesRecipes";
 export default function Categories() {
   const [activeCategory, setActiveCategory] = useState();
   return (
-    <View className="items-center justify-center">
+    <View className="items-center justify-center ">
       <View>
         <Text className="font-bold text-center text-3xl">Categorias</Text>
       </View>

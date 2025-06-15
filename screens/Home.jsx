@@ -4,13 +4,24 @@ import { TextInput, useTheme } from "react-native-paper";
 
 //mis Imports componentes necesarios
 import RecipesRow from "../components/Home/RecipesRow";
+import {
+  featureBebidas,
+  featuredAcompañamientos,
+  featuredPlatosFuertes,
+  featurepostresyamasijos,
+  featureSalsas,
+} from "../components/Home/recipes/CategoriesRecipes";
+import Categories from "../components/Home/Categories";
 
 const Home = () => {
   const insets = useSafeAreaInsets(); // Obteniendo los insets de la safe area
   return (
-    <View style={{ paddingTop: insets.top, paddingBottom: insets.bottom }}>
+    <View
+      style={{ paddingTop: insets.top, paddingBottom: insets.bottom }}
+      className=" flex flex-col gap-2"
+    >
       {/* Barra buscador de recipientes */}
-      <View className="py-2 w-full px-4">
+      <View className=" w-full px-4">
         <View>
           <TextInput
             placeholder="Buscar recetas"
@@ -52,18 +63,39 @@ const Home = () => {
           />
         </View>
       </View>
+      {/* fin Barra buscador de recipientes */}
 
-      <ScrollView
-        scrollEnabled={true}
-        className=" border-2 border-red-600"
-      >
-        {/* <Text className="text-2xl font-bold text-gray-900 mb-4 text-center tracking-widest pt-3">
-          Home del menu colombiano
-        </Text> */}
-          <View>
-            {<RecipesRow />}
-          </View>
+      {/* <Categories/> */}
+      <View>
+
+      <ScrollView>{<Categories />}</ScrollView>
+      </View>
+      {/* <Categories/> */}
+      
+      <View>
+
+      
+      <ScrollView scrollEnabled={true} className=" ">
+        <View>
+          {[
+            featuredPlatosFuertes,
+            featureBebidas,
+            featureSalsas,
+            featuredAcompañamientos,
+            featurepostresyamasijos,
+          ].map((item, CategoriesRecipes) => {
+            return (
+              <RecipesRow
+                key={CategoriesRecipes}
+                title={item.title}
+                recipes={item.recipes}
+                description={item.description}
+              />
+            );
+          })}
+        </View>
       </ScrollView>
+      </View>
     </View>
   );
 };
