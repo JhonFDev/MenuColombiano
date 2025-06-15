@@ -1,10 +1,18 @@
 import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
 import DishesCard from "./DishesCard";
+import Categories from "./Categories";
 
 export default function RecipesRow() {
   return (
     <>
-      <View className="">
+      <View className="border">
+        {/* //vista categorias */}
+        <ScrollView >
+          {<Categories />}
+        </ScrollView>
+        {/* //fin vista categorias */}
+
+        {/* //vista reciperow */}
         <View>
           <Text>yo soy RecipesRow</Text>
           <Text>titulo de la receta</Text>
@@ -13,15 +21,14 @@ export default function RecipesRow() {
         <Pressable onPress={() => alert("muy pronto...")}>
           <Text> Ver Todo...</Text>
         </Pressable>
+        {/* //fin reciperow*/}
+
+        {/* // vista dishescard */}
+        <ScrollView >
+          {<DishesCard />}
+        </ScrollView>
+        {/* //fin vista dishescard */}
       </View>
-      <ScrollView
-        horizontal={true}
-        showsHorizontalScrollIndicator={false}
-      >
-        {
-            <DishesCard/>
-        }
-      </ScrollView>
     </>
   );
 }

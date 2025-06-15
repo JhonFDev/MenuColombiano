@@ -1,28 +1,48 @@
 export const categories = [
   {
     id: 1,
-    name: "Platos fuertes",
+    name: "Acompañamientos",
     image: require("../../../assets/pizzaIcon.png"),
   },
   {
     id: 2,
-    name: "Acompañamientos",
+    name: "Platos fuertes",
     image: require("../../../assets/pizzaIcon.png"),
   },
 
   {
     id: 3,
-    name: "Postres y Amasijos",
+    name: "Caldos y sopas",
     image: require("../../../assets/pizzaIcon.png"),
   },
   {
     id: 4,
-    name: "Jugos y bebidas",
+    name: " Amasijos",
     image: require("../../../assets/pizzaIcon.png"),
   },
   {
     id: 5,
-    name: "Salsas",
+    name: "Postres",
+    image: require("../../../assets/pizzaIcon.png"),
+  },
+  {
+    id: 6,
+    name: "Entradas",
+    image: require("../../../assets/pizzaIcon.png"),
+  },
+  {
+    id: 7,
+    name: "Jugos y Bebidas",
+    image: require("../../../assets/pizzaIcon.png"),
+  },
+  {
+    id: 8,
+    name: "Salsas Frias",
+    image: require("../../../assets/pizzaIcon.png"),
+  },
+  {
+    id: 9,
+    name: "Salsas Calientes",
     image: require("../../../assets/pizzaIcon.png"),
   },
 ];

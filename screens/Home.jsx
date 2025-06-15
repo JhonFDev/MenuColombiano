@@ -55,11 +55,11 @@ const Home = () => {
 
       <ScrollView
         scrollEnabled={true}
-        className="bg-amber-300 border-4 border-red-600"
+        className=" border-2 border-red-600"
       >
-        <Text className="text-2xl font-bold text-gray-900 mb-4 text-center tracking-widest pt-3">
+        {/* <Text className="text-2xl font-bold text-gray-900 mb-4 text-center tracking-widest pt-3">
           Home del menu colombiano
-        </Text>
+        </Text> */}
           <View>
             {<RecipesRow />}
           </View>
