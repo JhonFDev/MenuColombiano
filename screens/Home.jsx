@@ -71,9 +71,8 @@ const Home = () => {
       </View>
       {/* <Categories/> */}
 
-      <View>
-        <ScrollView >
-          <View>
+        <ScrollView>
+          <View className="gap-5">
             {[
               featuredPlatosFuertes,
               featureBebidas,
@@ -92,7 +91,6 @@ const Home = () => {
             })}
           </View>
         </ScrollView>
-      </View>
     </View>
   );
 };

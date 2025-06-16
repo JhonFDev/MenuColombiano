@@ -1,24 +1,24 @@
 import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
 import DishesCard from "./DishesCard";
 
-export default function RecipesRow({ title, description, recipes }) {
+export default function RecipesRow({ recipes }) {
   return (
     <>
-      <View className="">
+      <View className=" elevation">
         {/* //vista reciperow */}
-        <View>
+        {/* <View>
           <Text>{title}</Text>
-          <Text>descripcion de la receta{description}</Text>
+          <Text>{description}</Text>
         </View>
         <Pressable onPress={() => alert("muy pronto...")}>
           <Text> Ver Todo...</Text>
-        </Pressable>
+        </Pressable> */}
         {/* //fin reciperow*/}
 
         {/* // vista dishescard */}
         <ScrollView>
           {recipes.map((recipe, CategoriesRecipes) => {
-            return <DishesCard />;
+            return <DishesCard key={CategoriesRecipes} item={recipe}/>;
           })}
         </ScrollView>
         {/* //fin vista dishescard */}

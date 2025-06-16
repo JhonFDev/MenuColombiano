@@ -252,9 +252,9 @@ export const featuredAcompañamientos = {
   ],
 };
 
-export const featuredCaldosYSopas ={
+// export const featuredCaldosYSopas ={
   
-}
+// }
 
 export const featurepostresyamasijos = {
   id: 3,
