@@ -67,34 +67,31 @@ const Home = () => {
 
       {/* <Categories/> */}
       <View>
-
-      <ScrollView>{<Categories />}</ScrollView>
+        <ScrollView>{<Categories />}</ScrollView>
       </View>
       {/* <Categories/> */}
-      
-      <View>
 
-      
-      <ScrollView scrollEnabled={true} className=" ">
-        <View>
-          {[
-            featuredPlatosFuertes,
-            featureBebidas,
-            featureSalsas,
-            featuredAcompañamientos,
-            featurepostresyamasijos,
-          ].map((item, CategoriesRecipes) => {
-            return (
-              <RecipesRow
-                key={CategoriesRecipes}
-                title={item.title}
-                recipes={item.recipes}
-                description={item.description}
-              />
-            );
-          })}
-        </View>
-      </ScrollView>
+      <View>
+        <ScrollView >
+          <View>
+            {[
+              featuredPlatosFuertes,
+              featureBebidas,
+              featureSalsas,
+              featuredAcompañamientos,
+              featurepostresyamasijos,
+            ].map((item, CategoriesRecipes) => {
+              return (
+                <RecipesRow
+                  key={CategoriesRecipes}
+                  title={item.title}
+                  recipes={item.recipes}
+                  description={item.description}
+                />
+              );
+            })}
+          </View>
+        </ScrollView>
       </View>
     </View>
   );

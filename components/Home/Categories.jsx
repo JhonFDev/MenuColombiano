@@ -13,27 +13,26 @@ import { categories } from "./recipes/CategoriesRecipes";
 export default function Categories() {
   const [activeCategory, setActiveCategory] = useState();
   return (
-    <View className="items-center justify-center ">
-      <View>
-        <Text className="font-bold text-center text-3xl">Categorias</Text>
+    <View className="items-center justify-center">
+      <View className="flex w-full">
+        <Text className="font-bold left-9 text-2xl">Categorias</Text>
       </View>
       <ScrollView
-        className="border rounded-full w-[372px]"
+        className=" w-[372px]"
         horizontal={true}
         showsHorizontalScrollIndicator={false}
       >
-        <View className="flex flex-row justify-between items-center gap-3 p-3 ">
+        <View className="flex flex-row justify-between items-center gap-3 p-3">
           {categories.map((category, CategoriesRecipes) => {
             let isActive = category.id == activeCategory;
             return (
               <View
                 key={CategoriesRecipes}
-                className="flex items-center justify-center w-[120px] left-2"
+                className="flex items-center justify-center w-[121px] border rounded-full h-[80px]"
               >
                 <Pressable
                   onPress={() => setActiveCategory(category.id)}
                   className="flex items-center"
-
                 >
                   <Image
                     source={category.image}
