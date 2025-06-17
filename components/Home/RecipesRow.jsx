@@ -1,10 +1,9 @@
 import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
 import DishesCard from "./DishesCard";
 
-export default function RecipesRow({ recipes }) {
+export default function RecipesRow({ recipes, title, description }) {
   return (
-    <>
-      <View className=" elevation">
+      <View className="border ">
         {/* //vista reciperow */}
         {/* <View>
           <Text>{title}</Text>
@@ -16,14 +15,13 @@ export default function RecipesRow({ recipes }) {
         {/* //fin reciperow*/}
 
         {/* // vista dishescard */}
-        <ScrollView>
+        <ScrollView scrollEnabled >
           {recipes.map((recipe, CategoriesRecipes) => {
             return <DishesCard key={CategoriesRecipes} item={recipe}/>;
           })}
         </ScrollView>
         {/* //fin vista dishescard */}
       </View>
-    </>
   );
 }
 

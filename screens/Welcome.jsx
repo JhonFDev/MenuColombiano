@@ -20,7 +20,7 @@ const Welcome = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       navigation.navigate("home");
-    }, 5000); // 3 segundos
+    }, 2000); // 3 segundos
     return () => clearTimeout(timer);
   }, []);
 

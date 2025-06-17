@@ -72,7 +72,7 @@ const Home = () => {
       {/* <Categories/> */}
 
         <ScrollView>
-          <View className="gap-5">
+          <View className="gap-2">
             {[
               featuredPlatosFuertes,
               featureBebidas,
