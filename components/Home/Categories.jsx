@@ -22,13 +22,13 @@ export default function Categories() {
         horizontal={true}
         showsHorizontalScrollIndicator={false}
       >
-        <View className="flex flex-row justify-between items-center gap-3 p-3">
+        <View className="flex flex-row justify-between items-center gap-3 p-1">
           {categories.map((category, CategoriesRecipes) => {
             let isActive = category.id == activeCategory;
             return (
               <View
                 key={CategoriesRecipes}
-                className="flex items-center justify-center w-[121px] border rounded-full h-[80px]"
+                className="flex items-center justify-center w-[145px] border rounded-full h-[80px]"
               >
                 <Pressable
                   onPress={() => setActiveCategory(category.id)}
