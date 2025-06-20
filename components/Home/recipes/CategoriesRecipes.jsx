@@ -56,7 +56,7 @@ export const featuredPlatosFuertes = {
       id: 1,
       name: "Ajiaco",
       image: require("../../../assets/ajiaco.png"),
-      stars: 4,
+      stars: 2,
       reviews: "4.4k",
       category: "platos fuertes",
       time: [
@@ -88,7 +88,7 @@ export const featuredPlatosFuertes = {
       id: 2,
       name: "Bandeja paisa",
       image: require("../../../assets/BANDEJA-PAISA.jpg"),
-      stars: 4,
+      stars: 5,
       reviews: "4.4k",
       category: "platos fuertes",
       time: [

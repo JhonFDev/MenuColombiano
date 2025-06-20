@@ -21,7 +21,7 @@ const Home = () => {
       className=" flex flex-col gap-2"
     >
       {/* Barra buscador de recipientes */}
-      <View className=" w-full px-4">
+      <View className="w-full px-4">
         <View>
           <TextInput
             placeholder="Buscar recetas"
@@ -71,26 +71,26 @@ const Home = () => {
       </View>
       {/* <Categories/> */}
 
-        <ScrollView>
-          <View className="gap-2">
-            {[
-              featuredPlatosFuertes,
-              featureBebidas,
-              featureSalsas,
-              featuredAcompañamientos,
-              featurepostresyamasijos,
-            ].map((item, CategoriesRecipes) => {
-              return (
-                <RecipesRow
-                  key={CategoriesRecipes}
-                  title={item.title}
-                  recipes={item.recipes}
-                  description={item.description}
-                />
-              );
-            })}
-          </View>
-        </ScrollView>
+      <ScrollView>
+        <View className="gap-2 border">
+          {[
+            featuredPlatosFuertes,
+            featureBebidas,
+            featureSalsas,
+            featuredAcompañamientos,
+            featurepostresyamasijos,
+          ].map((item, CategoriesRecipes) => {
+            return (
+              <RecipesRow
+                key={CategoriesRecipes}
+                title={item.title}
+                recipes={item.recipes}
+                description={item.description}
+              />
+            );
+          })}
+        </View>
+      </ScrollView>
     </View>
   );
 };

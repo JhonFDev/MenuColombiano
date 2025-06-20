@@ -3,7 +3,7 @@ import DishesCard from "./DishesCard";
 
 export default function RecipesRow({ recipes, title, description }) {
   return (
-    <View className="border flex flex-row">
+    <View className="flex flex-row ">
       {/* //vista reciperow */}
       {/* <View>
           <Text>{title}</Text>
