@@ -22,18 +22,17 @@ export default function DishesCard({ item }) {
   };
   return (
     <View className="border border-green-500  bg-white opacity-60 elevation-xl rounded-2xl shadow-black shadow-2xl w-[250] mr-4">
-      <Pressable onPress={() => alert("vamos a dishes")}>
+      <Pressable onPress={() => navigation.navigate("dishes", {...item})}>
         {/* <Text className="">DishesCard XD</Text> */}
-        <View className=" flex left-2">
-          <Pressable onPress={() => navigation.navigate("login")}>
-              <Icon source="bookmark" color="#808080" size={25} />
-          </Pressable>
+        <View className=" flex ">
+          {/* <Pressable onPress={() => navigation.navigate("login")}>
+          </Pressable> */}
 
           <Image
             source={item.image}
-            className="w-64 h-36 rounded-tl-2xl rounded-tr-2xl"
+            className="w-[250] h-36 rounded-tl-2xl rounded-tr-2xl"
           />
-          <View className=" border w-[240] justify-center items-center">
+          <View className=" border w-[250] justify-center items-center">
             <Text className=" text-lg font-bold">{item.name}</Text>
             <View className="flex flex-row mt-2  items-center justify-evenly border w-full">
               <StarRating rating={item.stars} />
