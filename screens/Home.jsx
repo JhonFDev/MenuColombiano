@@ -72,7 +72,7 @@ const Home = () => {
       {/* <Categories/> */}
 
       <ScrollView>
-        <View className="gap-2 border">
+        <View className="gap-2 border mb-[195px]">
           {[
             featuredPlatosFuertes,
             featureBebidas,

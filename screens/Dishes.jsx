@@ -5,6 +5,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { Icon } from "react-native-paper";
 import FoodTime from "../components/Home/foodTime";
 import DishRow from "../components/Home/dishRow";
+import ArrowLeft from "../components/ArrowLeft";
 
 export default function Dishes() {
   const { params } = useRoute();
@@ -28,14 +29,19 @@ export default function Dishes() {
   };
   return (
     <View style={{ paddingTop: insets.top, paddingBottom: insets.bottom }}>
-      <ScrollView>
+      <ArrowLeft />
+      <ScrollView showsVerticalScrollIndicator={false}>
         <View className="items-center ">
-          <View className="relative">
-            <Image source={item.image} className="w-[350] h-72" />
+          <View style={{ position: "relative" }}>
+            <Image
+              source={item.image}
+              className="w-[400] h-72"
+              style={{  }}
+            />
           </View>
 
-          <View className=" w-[380] mt-2 rounded-tl-3xl rounded-tr-3xl border ">
-            <View className="flex-row justify-around items-center ">
+          <View className=" w-[400] rounded-tl-[50] rounded-tr-[50] border border-b-transparent elevation-md  pt-7 top-60 absolute bg-white pb-5">
+            <View className="flex-row justify-evenly items-center ">
               <Text className="font-bold text-xl">{item.name}</Text>
               <StarRating rating={item.stars} />
             </View>
@@ -53,7 +59,7 @@ export default function Dishes() {
                 </View>
               </View>
               <View className="">
-                <Text className="font-semibold">{item.category}</Text>
+                <Text className="font-semibold text-xl">{item.category}</Text>
               </View>
             </View>
           </View>
@@ -61,20 +67,17 @@ export default function Dishes() {
 
         {/* preparacion e ingredientes */}
 
-        <View className="border">
-          <Text>Ingredientes y Preparación</Text>
+        <View className=" bg-white top-20">
+          {/* <Text className="border text-center font-extrabold text-2xl">
+            Ingredientes y Preparación
+          </Text> */}
 
-        {/* dishes */}
+          {/* dishes */}
 
-        {item.dishes.map((dish, CategoriesRecipes) =>(
-          <DishRow item={{...dish}} key={CategoriesRecipes} />
-        ))}
-
-
+          {item.dishes.map((dish, CategoriesRecipes) => (
+            <DishRow item={{ ...dish }} key={CategoriesRecipes} />
+          ))}
         </View>
-
-
-        
 
         {/* fin preparacion e ingredientes */}
       </ScrollView>
