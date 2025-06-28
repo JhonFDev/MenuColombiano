@@ -15,7 +15,22 @@ const Stack = createNativeStackNavigator();
 const Tabs = createBottomTabNavigator();
 const RootStack = createNativeStackNavigator();
 
-const Navigation = () => {
+
+const Navigation =() => {
+
+  return (
+    <NavigationContainer>
+      <RootStack.Navigator initialRouteName="welcome" screenOptions={{headerShown:false}}>
+          <RootStack.Screen name="welcome" component={Welcome}/>
+          <RootStack.Screen name="app" component={TabNavigation}/>
+      </RootStack.Navigator>
+    </NavigationContainer>
+  )
+}
+
+
+
+function TabNavigation  ()  {
   const screenOptions = (route, color) => {
     let iconname;
     switch (route.name) {
@@ -36,16 +51,14 @@ const Navigation = () => {
   };
 
   return (
-    <NavigationContainer>
       <Tabs.Navigator
-        initialRouteName="homenologin"
         screenOptions={({ route }) => ({
           headerShown: false,
           tabBarIcon: ({ color }) => screenOptions(route, color),
-          tabBarActiveTintColor:"black",
-          tabBarInactiveTintColor:"gray",
-          tabBarAllowFontScaling:true,
-          tabBarLabelStyle:({fontSize:12 , fontWeight:"bold"})
+          tabBarActiveTintColor: "black",
+          tabBarInactiveTintColor: "gray",
+          tabBarAllowFontScaling: true,
+          tabBarLabelStyle: { fontSize: 12, fontWeight: "bold" },
         })}
       >
         <Tabs.Screen
@@ -59,19 +72,15 @@ const Navigation = () => {
           options={{ title: "Configuración" }}
         />
       </Tabs.Navigator>
-    </NavigationContainer>
   );
 };
-
-
 
 function HomeNoLogin() {
   return (
     <Stack.Navigator
-      initialRouteName="welcome"
+      initialRouteName="home"
       screenOptions={{ headerShown: false }}
     >
-      <Stack.Screen name="welcome" component={Welcome} />
       <Stack.Screen name="home" component={Home} />
       <Stack.Screen name="login" component={Login} />
       <Stack.Screen name="register" component={Register} />

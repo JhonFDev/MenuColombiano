@@ -19,8 +19,8 @@ const Welcome = () => {
   const insets = useSafeAreaInsets(); // Obteniendo los insets de la safe area
   useEffect(() => {
     const timer = setTimeout(() => {
-      navigation.navigate("home");
-    }, 2000); // 3 segundos
+      navigation.navigate("app");
+    }, 3000); // 3 segundos
     return () => clearTimeout(timer);
   }, []);
 
@@ -44,7 +44,7 @@ const Welcome = () => {
           ></ImageBackground>
           <Pressable
             className="bg-yellow-400 rounded-full p-3 w-[350px] "
-            onPress={() => navigation.navigate("home")}
+            onPress={() => navigation.navigate("app")}
           >
             <Text className="text-3xl font-semibold text-center text-black tracking-widest">
               Comenzar
