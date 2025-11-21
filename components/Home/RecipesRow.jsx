@@ -4,24 +4,13 @@ import DishesCard from "./DishesCard";
 export default function RecipesRow({ recipes, title, description }) {
   return (
     <View className="flex flex-row ">
-      {/* //vista reciperow */}
-      {/* <View>
-          <Text>{title}</Text>
-          <Text>{description}</Text>
-        </View>
-        <Pressable onPress={() => alert("muy pronto...")}>
-          <Text> Ver Todo...</Text>
-        </Pressable> */}
-      {/* //fin reciperow*/}
-
       {/* // vista dishescard */}
       <ScrollView
         scrollEnabled
         horizontal
-        showsHorizontalScrollIndicator={false}
-      >
-        {recipes.map((recipe, CategoriesRecipes) => {
-          return <DishesCard key={CategoriesRecipes} item={recipe} />;
+        showsHorizontalScrollIndicator={false}>
+        {recipes.map((recipe, index) => {
+          return <DishesCard key={index} item={recipe} />;
         })}
       </ScrollView>
       {/* //fin vista dishescard */}

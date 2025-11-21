@@ -12,25 +12,28 @@ export default function DishRow({ item }) {
         shadowOpacity: 0.4,
         elevation: 30,
         shadowColor: "red",
-      }}
-    >
+      }}>
       <View className="flex pt-5 gap-5">
         {/* ingredientes */}
         <View className="">
-          <Text className="font-bold text-2xl text-center mb-3">Ingredientes: </Text>
+          <Text className="font-bold text-2xl text-center mb-3">
+            Ingredientes:{" "}
+          </Text>
 
-          {item.ingredients.map((ingredient, CategoriesRecipes) => (
-            <IngredientRow item={{ ...ingredient }} key={CategoriesRecipes} />
+          {item.ingredients.map((ingredient, index) => (
+            <IngredientRow item={{ ...ingredient }} key={index} />
           ))}
         </View>
         {/* ingredientes */}
 
         {/* preparacion */}
         <View>
-          <Text className="font-bold text-2xl text-center mb-3">Preparacion: </Text>
+          <Text className="font-bold text-2xl text-center mb-3">
+            Preparacion:{" "}
+          </Text>
 
-          {item.preparations.map((preparati, CategoriesRecipes) => (
-            <PreparationRow item={{ ...preparati }} key={CategoriesRecipes} />
+          {item.preparations.map((preparati, index) => (
+            <PreparationRow item={{ ...preparati }} key={index} />
           ))}
         </View>
         {/* preparacion */}

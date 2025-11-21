@@ -1,8 +1,6 @@
 import {
   View,
   Text,
-  SafeAreaView,
-  Image,
   ImageBackground,
   StyleSheet,
   Pressable,
@@ -30,22 +28,23 @@ const Welcome = () => {
       locations={[0, 0.5, 1]}
       style={styles.linearGradient}
       start={{ x: 0, y: 0 }}
-      end={{ x: 1, y: 1 }}
-    >
-      <View style={{ paddingTop: insets.top, paddingBottom: insets.bottom }}>
-        <View className="flex-1 justify-center items-center w-max:[400]">
+      end={{ x: 1, y: 1 }}>
+      <View
+        style={{ paddingTop: insets.top, paddingBottom: insets.bottom }}
+        className="flex-1 w-full">
+        <View className="flex-1 justify-center items-center w-full px-4">
           <Text className="text-6xl font-bold text-center text-yellow-400 justify-center tracking-widest">
             Recetas Colombianas
           </Text>
-          {/* Puedes agregar una imagen aquí si es necesario */}
+
+          {/* se agrega una imagen aquí si es necesario */}
           <ImageBackground
             source={require("../assets/imagenWelcome.png")}
-            className="w-[399px] h-[450px] w-max:[400px] my-4"
-          ></ImageBackground>
+            className="w-full h-[450px] my-4"
+            resizeMode="contain"></ImageBackground>
           <Pressable
-            className="bg-yellow-400 rounded-full p-3 w-[350px] "
-            onPress={() => navigation.navigate("app")}
-          >
+            className="bg-yellow-400 rounded-full p-3 w-full max-w-sm"
+            onPress={() => navigation.navigate("app")}>
             <Text className="text-3xl font-semibold text-center text-black tracking-widest">
               Comenzar
             </Text>
@@ -62,7 +61,5 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
-    borderRadius: 5,
-    width: 400,
   },
 });

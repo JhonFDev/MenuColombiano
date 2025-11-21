@@ -15,31 +15,30 @@ const Stack = createNativeStackNavigator();
 const Tabs = createBottomTabNavigator();
 const RootStack = createNativeStackNavigator();
 
-
-const Navigation =() => {
-
+const Navigation = () => {
   return (
     <NavigationContainer>
-      <RootStack.Navigator initialRouteName="welcome" screenOptions={{headerShown:false}}>
-          <RootStack.Screen name="welcome" component={Welcome}/>
-          <RootStack.Screen name="app" component={TabNavigation}/>
+      <RootStack.Navigator
+        initialRouteName="welcome"
+        screenOptions={{ headerShown: false }}
+      >
+        <RootStack.Screen name="welcome" component={Welcome} />
+        <RootStack.Screen name="app" component={TabNavigation} />
       </RootStack.Navigator>
     </NavigationContainer>
-  )
-}
+  );
+};
 
-
-
-function TabNavigation  ()  {
+function TabNavigation() {
   const screenOptions = (route, color) => {
     let iconname;
     switch (route.name) {
       case "homenologin":
         iconname = "book-open";
         break;
-      case "profile":
-        iconname = "home-circle-outline";
-        break;
+      // case "profile":
+      //   iconname = "home-circle-outline";
+      //   break;
       case "settings":
         iconname = "cog";
         break;
@@ -51,29 +50,29 @@ function TabNavigation  ()  {
   };
 
   return (
-      <Tabs.Navigator
-        screenOptions={({ route }) => ({
-          headerShown: false,
-          tabBarIcon: ({ color }) => screenOptions(route, color),
-          tabBarActiveTintColor: "black",
-          tabBarInactiveTintColor: "gray",
-          tabBarAllowFontScaling: true,
-          tabBarLabelStyle: { fontSize: 12, fontWeight: "bold" },
-        })}
-      >
-        <Tabs.Screen
-          name="homenologin"
-          component={HomeNoLogin}
-          options={{ title: "Recetas" }}
-        />
-        <Tabs.Screen
-          name="settings"
-          component={Settings}
-          options={{ title: "Configuración" }}
-        />
-      </Tabs.Navigator>
+    <Tabs.Navigator
+      screenOptions={({ route }) => ({
+        headerShown: false,
+        tabBarIcon: ({ color }) => screenOptions(route, color),
+        tabBarActiveTintColor: "black",
+        tabBarInactiveTintColor: "gray",
+        tabBarAllowFontScaling: true,
+        tabBarLabelStyle: { fontSize: 12, fontWeight: "bold" },
+      })}
+    >
+      <Tabs.Screen
+        name="homenologin"
+        component={HomeNoLogin}
+        options={{ title: "Recetas" }}
+      />
+      <Tabs.Screen
+        name="settings"
+        component={Settings}
+        options={{ title: "Configuración" }}
+      />
+    </Tabs.Navigator>
   );
-};
+}
 
 function HomeNoLogin() {
   return (

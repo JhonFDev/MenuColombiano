@@ -21,8 +21,8 @@ export default function DishesCard({ item }) {
     );
   };
   return (
-    <View className="border border-green-500  bg-white opacity-60 elevation-xl rounded-2xl shadow-black shadow-2xl w-[250] mr-4">
-      <Pressable onPress={() => navigation.navigate("dishes", {...item})}>
+    <View className="border border-green-500  bg-white opacity-60  rounded-2xl shadow-black shadow-2xl w-[250] mr-4">
+      <Pressable onPress={() => navigation.navigate("dishes", { ...item })}>
         {/* <Text className="">DishesCard XD</Text> */}
         <View className=" flex ">
           {/* <Pressable onPress={() => navigation.navigate("login")}>
@@ -32,17 +32,17 @@ export default function DishesCard({ item }) {
             source={item.image}
             className="w-[250] h-36 rounded-tl-2xl rounded-tr-2xl"
           />
-          <View className=" border w-[250] justify-center items-center">
+          <View className="  w-[250] justify-center items-center">
             <Text className=" text-lg font-bold">{item.name}</Text>
-            <View className="flex flex-row mt-2  items-center justify-evenly border w-full">
+            <View className="flex flex-row mt-2  items-center justify-evenly w-full">
               <StarRating rating={item.stars} />
               <Text className="font-semibold">{item.category}</Text>
             </View>
             <View className="flex flex-row mt-1 items-center gap-10">
               <Icon source="clock-time-seven" color="#808080" size={25} />
               <View>
-                {item.time.map((timeprepa1, CategoriesRecipes) => (
-                  <FoodTime key={CategoriesRecipes} item={{ ...timeprepa1 }} />
+                {item.time.map((timeprepa1, index) => (
+                  <FoodTime key={index} item={{ ...timeprepa1 }} />
                 ))}
               </View>
             </View>

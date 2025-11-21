@@ -13,74 +13,69 @@ export default function Dishes() {
 
   let item = params;
 
-  const StarRating = ({ rating }) => {
-    return (
-      <View className="flex flex-row">
-        {[1, 2, 3, 4, 5].map((i) => (
-          <Icon
-            key={i}
-            source={i <= rating ? "star" : "star-outline"}
-            color="gold"
-            size={25}
-          />
-        ))}
-      </View>
-    );
-  };
   return (
-    <View style={{ paddingTop: insets.top, paddingBottom: insets.bottom }}>
+    <View
+      style={{ paddingTop: insets.top, paddingBottom: insets.bottom }}
+      className="flex-1 bg-white">
       <ArrowLeft />
       <ScrollView showsVerticalScrollIndicator={false}>
-        <View className="items-center ">
-          <View style={{ position: "relative" }}>
+        <View className="items-center">
+          <View className="w-full relative">
             <Image
               source={item.image}
-              className="w-[400] h-72"
-              style={{  }}
+              className="w-full h-72"
+              resizeMode="cover"
             />
           </View>
 
-          <View className=" w-[400] rounded-tl-[50] rounded-tr-[50] border border-b-transparent elevation-md  pt-7 top-60 absolute bg-white pb-5">
-            <View className="flex-row justify-evenly items-center ">
-              <Text className="font-bold text-xl">{item.name}</Text>
+          <View className="w-full bg-white rounded-t-[50px] -mt-12 pt-8 pb-5 px-6 shadow-lg elevation-md">
+            <View className="flex-row justify-between items-center mb-4">
+              <Text className="font-bold text-xl flex-1 mr-2">{item.name}</Text>
               <StarRating rating={item.stars} />
             </View>
 
-            <View className=" flex flex-row mt-2 items-center gap-14 left-4">
-              <View className=" flex-row items-center gap-3 ">
+            <View className="flex-row items-center justify-between mt-2">
+              <View className="flex-row items-center gap-3">
                 <Icon source="clock-time-seven" color="#808080" size={25} />
                 <View>
-                  {item.time.map((timeprepa1, CategoriesRecipes) => (
-                    <FoodTime
-                      key={CategoriesRecipes}
-                      item={{ ...timeprepa1 }}
-                    />
+                  {item.time.map((timeprepa1, index) => (
+                    <FoodTime key={index} item={{ ...timeprepa1 }} />
                   ))}
                 </View>
               </View>
-              <View className="">
-                <Text className="font-semibold text-xl">{item.category}</Text>
+              <View>
+                <Text className="font-semibold text-xl text-gray-600">
+                  {item.category}
+                </Text>
               </View>
             </View>
           </View>
         </View>
 
         {/* preparacion e ingredientes */}
-
-        <View className=" bg-white top-20">
-          {/* <Text className="border text-center font-extrabold text-2xl">
-            Ingredientes y Preparación
-          </Text> */}
-
+        <View className="bg-white px-4 pb-10">
           {/* dishes */}
-
-          {item.dishes.map((dish, CategoriesRecipes) => (
-            <DishRow item={{ ...dish }} key={CategoriesRecipes} />
+          {item.dishes.map((dish, index) => (
+            <DishRow item={{ ...dish }} key={index} />
           ))}
         </View>
-
         {/* fin preparacion e ingredientes */}
       </ScrollView>
     </View>
   );
 }
+
+const StarRating = ({ rating }) => {
+  return (
+    <View className="flex flex-row">
+      {[1, 2, 3, 4, 5].map((i) => (
+        <Icon
+          key={i}
+          source={i <= rating ? "star" : "star-outline"}
+          color="gold"
+          size={25}
+        />
+      ))}
+    </View>
+  );
+};

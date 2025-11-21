@@ -18,8 +18,7 @@ const Home = () => {
   return (
     <View
       style={{ paddingTop: insets.top, paddingBottom: insets.bottom }}
-      className=" flex flex-col gap-2"
-    >
+      className=" flex flex-col gap-2">
       {/* Barra buscador de recipientes */}
       <View className="w-full px-4">
         <View>
@@ -65,24 +64,18 @@ const Home = () => {
       </View>
       {/* fin Barra buscador de recipientes */}
 
-      {/* <Categories/> */}
-      <View>
-        <ScrollView>{<Categories />}</ScrollView>
-      </View>
-      {/* <Categories/> */}
-
-      <ScrollView>
-        <View className="gap-2 border mb-[195px]">
+      <ScrollView contentContainerStyle={{ paddingBottom: 100 }}>
+        <View className="gap-2">
           {[
             featuredPlatosFuertes,
             featureBebidas,
             featureSalsas,
             featuredAcompañamientos,
             featurepostresyamasijos,
-          ].map((item, CategoriesRecipes) => {
+          ].map((item, index) => {
             return (
               <RecipesRow
-                key={CategoriesRecipes}
+                key={index}
                 title={item.title}
                 recipes={item.recipes}
                 description={item.description}

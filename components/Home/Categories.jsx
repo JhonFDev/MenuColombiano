@@ -18,22 +18,19 @@ export default function Categories() {
         <Text className="font-bold left-9 text-2xl">Categorias</Text>
       </View>
       <ScrollView
-        className=" w-[372px]"
+        className="w-full"
         horizontal={true}
-        showsHorizontalScrollIndicator={false}
-      >
+        showsHorizontalScrollIndicator={false}>
         <View className="flex flex-row justify-between items-center gap-3 p-1">
-          {categories.map((category, CategoriesRecipes) => {
+          {categories.map((category, index) => {
             let isActive = category.id == activeCategory;
             return (
               <View
-                key={CategoriesRecipes}
-                className="flex items-center justify-center w-[145px] border rounded-full h-[80px]"
-              >
+                key={index}
+                className="flex items-center justify-center w-[145px] border rounded-full h-[80px]">
                 <Pressable
                   onPress={() => setActiveCategory(category.id)}
-                  className="flex items-center"
-                >
+                  className="flex items-center">
                   <Image
                     source={category.image}
                     className="h-[40px] w-[40px] rounded-full justify-center"
@@ -43,8 +40,7 @@ export default function Categories() {
                     style={{
                       color: isActive ? "#16213E" : "#777",
                       fontWeight: isActive ? "bold" : "ultralight",
-                    }}
-                  >
+                    }}>
                     {category.name}
                   </Text>
                 </Pressable>
